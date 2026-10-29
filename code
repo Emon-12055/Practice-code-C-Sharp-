@@ -1,0 +1,41 @@
+using System;
+namespace problem1
+{
+    class person
+    {
+        public string name {get; set;}
+        public int age {get; set;}
+        
+        public void display()
+        {
+            Console.WriteLine("Name is : " + name);
+            Console.WriteLine("Age is : " + age);
+        }
+        
+    }
+    class student : person
+    {
+        public int StudentID {get; set;}
+        
+        public void student_Info()
+        {
+            Console.WriteLine("Student ID : " + StudentID);
+        }
+    }
+    
+    class program
+    {
+        static void Main()
+        {
+            student E = new student();
+            E.name = "Emon";
+            E.age = 20 ;
+            E.StudentID = 24103076 ;
+            E.display();
+            E.student_Info();
+            
+        }
+    }
+    
+    
+}
